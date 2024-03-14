@@ -11,6 +11,7 @@
 - ask user to export the public and private gpg key to some backup
 
 => rpass save
+- Check if init is done. Exit with err if not
 - CLI flag for key to use by name (overrides the usage of default key) (probably --set-default-key)
 - Ask user for service_name, username and password. API keys are not supported as of now
 - In case the service_name and username combination already exists, then ask confirmation to override
@@ -31,6 +32,7 @@ key_name
 ```
 
 => rpass fetch
+- Check if init is done. Exit with err if not
 - CLI flag for key to use by name (overrides the usage of default key) (probably --set-default-key)
 - Print the key name that will be used to fetch
 - Provide a tui for service selection
