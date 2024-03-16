@@ -34,7 +34,7 @@ fn run() -> Result<(), Error> {
 
     fetch_options.remote_callbacks(callbacks);
 
-    if !Path::new("/etc/hosts").exists() {
+    if !Path::new(full_path.as_str()).exists() {
         RepoBuilder::new()
         .fetch_options(fetch_options)
         .with_checkout(checkout_options)
